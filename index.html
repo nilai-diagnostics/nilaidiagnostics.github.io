@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nilai Diagnostics - Where Precision Meets Trust</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nilai Diagnostics, Kamareddy - Radiology and Pathology services. Executive Health Checkup, Diabetic Profile, Cardiac Profile with 33% OFF limited time offer.">
+    <style>
+        :root {
+            --primary: #21917b;
+            --primary-dark: #167261;
+            --light: #ffffff;
+            --text: #333333;
+            --muted: #666666;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text);
+            background-color: #f7fafa;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--light);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0.6rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            cursor: pointer;
+        }
+        .brand img {
+            height: 42px;
+            width: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        .brand-text span:first-child {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            letter-spacing: 0.04em;
+        }
+        .brand-text span:last-child {
+            font-size: 0.7rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        nav li a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.3rem 0.4rem;
+            border-radius: 999px;
+            color: var(--muted);
+            transition: all 0.2s ease;
+        }
+        nav li a:hover {
+            color: var(--primary);
+            background-color: rgba(33, 145, 123, 0.08);
+        }
+        .nav-actions {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        .btn {
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.45rem 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background-color: transparent;
+        }
+        .btn-outline:hover {
+            background-color: rgba(33, 145, 123, 0.06);
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 3rem;
+        }
+        section {
+            padding: 3rem 0 1rem;
+            border-bottom: 1px solid #e3ecea;
+        }
+        section:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .section-heading {
+            font-size: 1.6rem;
+            margin-bottom: 0.4rem;
+            color: var(--primary-dark);
+        }
+        .section-subtitle {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-bottom: 1.6rem;
+        }
+        .home-sample-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 1.1em;
+        }
+        /* Hero */
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+            gap: 2.5rem;
+            align-items: center;
+            padding-top: 2.5rem;
+        }
+        .hero-text h1 {
+            font-size: 2rem;
+            margin-bottom: 0.6rem;
+            color: var(--primary-dark);
+            line-height: 1.2;
+        }
+        .hero-tagline {
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+        .hero-highlight {
+            font-size: 1rem;
+            margin-bottom: 0.9rem;
+        }
+        .hero-highlight strong {
+            color: var(--primary);
+        }
+        .hero-location {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 1.3rem;
+        }
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1.2rem;
+        }
+        .hero-meta {
+            font-size: 0.85rem;
+            color: var(--muted);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .hero-card {
+            background: radial-gradient(circle at top left, #e3f4f1, #ffffff);
+            border-radius: 18px;
+            padding: 1.6rem 1.4rem;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+        .hero-card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.8rem;
+            border: 3px solid rgba(33, 145, 123, 0.25);
+        }
+        .hero-card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary-dark);
+        }
+        .hero-card p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 0.4rem;
+        }
+        .hero-card small {
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 2.5fr) minmax(0, 2fr);
+            gap: 2rem;
+        }
+        .about-text p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.6rem;
+        }
+        .pill {
+            display: inline-block;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            background-color: rgba(33, 145, 123, 0.06);
+            color: var(--primary-dark);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.5rem;
+        }
+        .doctors {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .doctor-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 1.2rem;
+            border: 1px solid #e2eeec;
+            text-align: center;
+        }
+        .doctor-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary-dark);
+        }
+        .doctor-card .designation {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .doctor-card .qualifications {
+            font-size: 0.82rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        .doctor-card .reg-no {
+            font-size: 0.78rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-category {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .service-category:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .service-category h3 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+        .service-list {
+            list-style: none;
+        }
+        .service-list li {
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .service-list li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            border-radius: 12px;
+            padding: 1.2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            box-shadow: 0 8px 24px rgba(33, 145, 123, 0.3);
+        }
+        .highlight-box strong {
+            font-size: 1.1rem;
+            display: block;
+        }
+        /* Packages */
+        .offer-banner {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            border-radius: 16px;
+            padding: 1.2rem 1.4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 12px 32px rgba(33, 145, 123, 0.25);
+        }
+        .offer-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+        .offer-main {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 0.2rem;
+        }
+        .offer-sub {
+            font-size: 0.9rem;
+            opacity: 0.95;
+        }
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+        }
+        .package-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 1.4rem;
+            border: 2px solid transparent;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .package-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+        }
+        .package-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            margin-bottom: 0.8rem;
+        }
+        .package-badge {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .package-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary-dark);
+            line-height: 1.3;
+        }
+        .package-tests {
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+        .package-tests ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.84rem;
+            color: var(--muted);
+            line-height: 1.45;
+        }
+        .package-tests li {
+            padding: 0.15rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .package-tests li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.8rem;
+            width: 16px;
+        }
+        .package-pricing {
+            margin-bottom: 1rem;
+        }
+        .price-original {
+            text-decoration: line-through;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-bottom: 0.2rem;
+        }
+        .price-offer {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+        .price-discount {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-left: 0.4rem;
+        }
+        .package-card button {
+            width: 100%;
+            margin-top: auto;
+        }
+        /* Appointment */
+        .appointment-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+            gap: 2rem;
+            align-items: start;
+        }
+        form {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 1.4rem 1.3rem 1.6rem;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            margin-bottom: 0.3rem;
+        }
+        label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+        input, select, textarea {
+            border-radius: 8px;
+            border: 1px solid #d7e6e2;
+            padding: 0.55rem 0.6rem;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 1px rgba(33, 145, 123, 0.2);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .appointment-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 0.9rem;
+        }
+        .appointment-note {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+        }
+        .appointment-info {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+        .appointment-info strong {
+            color: var(--primary-dark);
+        }
+        .info-card {
+            border-radius: 14px;
+            padding: 1rem 1rem 1.1rem;
+            background-color: #ffffff;
+            border: 1px dashed rgba(33, 145, 123, 0.5);
+            margin-top: 1rem;
+        }
+        .info-card ul {
+            padding-left: 1.1rem;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.7fr) minmax(0, 2.3fr);
+            gap: 2rem;
+        }
+        .contact-details p {
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+        .contact-details strong {
+            color: var(--primary-dark);
+        }
+        .contact-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0.8rem 0 0.4rem;
+        }
+        .map-container {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 280px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Footer */
+        footer {
+            border-top: 1px solid #e3ecea;
+            padding: 1rem 1rem 1.4rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+            background-color: #ffffff;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.6rem;
+            align-items: center;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            nav ul {
+                display: none;
+            }
+            .hero, .about-grid, .appointment-layout, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .hero {
+                padding-top: 1.4rem;
+            }
+            .hero-text h1 {
+                font-size: 1.5rem;
+            }
+            main {
+                padding-inline: 0.9rem;
+            }
+            .nav-container {
+                padding-inline: 0.8rem;
+            }
+            .offer-main {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="brand" onclick="location.reload()">
+                <img src="logo.png" alt="Nilai Diagnostics logo">
+                <div class="brand-text">
+                    <span>Nilai Diagnostics</span>
+                    <span>Where Precision Meets Trust</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#packages">Health Packages</a></li>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+919000324325" class="btn btn-outline">Call</a>
+                <a href="https://wa.me/919000324325?text=Hi%20Nilai%20Diagnostics,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <div class="hero">
+                <div class="hero-text">
+                    <div class="hero-tagline">Where Precision Meets Trust</div>
+                    <h1>Radiology & Pathology under one roof</h1>
+                    <p class="hero-highlight">Delivering <strong>top-quality diagnostics</strong> and <strong>trustworthy results</strong> for you and your family in Kamareddy.</p>
+                    <p class="hero-location">Opp: SVR Hospital, Gandhi Nagar, Ramareddy Road, Kamareddy</p>
+                    <div class="hero-actions">
+                        <a href="#packages" class="btn btn-primary">View Health Packages</a>
+                        <a href="#appointment" class="btn btn-outline">Book an Appointment</a>
+                    </div>
+                    <div class="hero-meta">
+                        <span>Mon–Sat, 11:00 AM – 9:00 PM</span>
+                        <span>9000324325</span>
+                        <span class="home-sample-icon">🏠 <strong>Home Sample Collection Available</strong></span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <img src="logo.png" alt="Nilai Diagnostics emblem">
+                    <h2>Nilai Diagnostics</h2>
+                    <p>Limited Time: <strong>33% OFF</strong> on All Health Checkups</p>
+                    <small>Led by Radiologist Dr. N. Nithin Kumar & Pathologist Dr. N. Soumya</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2 class="section-heading">About Us</h2>
+            <p class="section-subtitle">Combining radiology and pathology to provide accurate, timely, and reliable diagnostic services under one roof.</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="pill">Nilai Diagnostics</span>
+                    <p>Nilai Diagnostics is a dedicated diagnostic centre in Kamareddy bringing radiology and pathology services together in a single, patient-friendly facility. Our focus is on high-quality reporting and transparent communication at every step.</p>
+                    <p>With a strong emphasis on precision, each report is prepared with care so that your treating doctor can make informed decisions with confidence. Our team uses modern techniques and follows standardized protocols to maintain consistency and accuracy.</p>
+                    <p class="home-sample-icon">🏠 <strong>Home blood sample collection available</strong> for your convenience.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1rem; margin-bottom: 0.7rem; color: #167261;">Our Consultants</h3>
+                    <div class="doctors">
+                        <div class="doctor-card">
+                            <h3>Dr. N. Nithin Kumar</h3>
+                            <div class="designation">Radiologist</div>
+                            <div class="qualifications">MBBS (OS), DNB Radiology</div>
+                            <div class="reg-no">REG. NO: APMC/FM/88524</div>
+                        </div>
+                        <div class="doctor-card">
+                            <h3>Dr. N. Soumya Nithin</h3>
+                            <div class="designation">Pathologist</div>
+                            <div class="qualifications">MBBS, MD Pathology</div>
+                            <div class="reg-no">REG. NO: TSMC/P/04444</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <h2 class="section-heading">Services Offered</h2>
+            <p class="section-subtitle">Comprehensive radiology and pathology services under one roof in Kamareddy.</p>
+            <div class="services-grid">
+                <div class="service-category">
+                    <h3>🌡️ Radiology Services</h3>
+                    <ul class="service-list">
+                        <li>Ultrasound Imaging</li>
+                        <li>Doppler Imaging</li>
+                        <li>TIFA Scan</li>
+                        <li>Fetal Echo</li>
+                        <li>USG Guided Aspiration</li>
+                        <li>Digital X-Ray</li>
+                        <li>ECG</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>🔬 Pathology Services</h3>
+                    <ul class="service-list">
+                        <li>Clinical Biochemistry</li>
+                        <li>Haematology</li>
+                        <li>Bone Marrow Aspiration & Biopsy</li>
+                        <li>Cytology</li>
+                        <li>Histopathology</li>
+                        <li>All Blood Tests</li>
+                        <li>IV, RGU, MCU</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <strong>First in-house Histopathology services available in and around Kamareddy</strong>
+                <div style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.3rem;">Fast, accurate results with same-day reporting</div>
+            </div>
+        </section>
+
+        <!-- Health Packages -->
+        <section id="packages">
+            <h2 class="section-heading">Health Packages</h2>
+            <p class="section-subtitle">Limited time <strong>33% OFF</strong> on all health checkups. <span class="home-sample-icon">🏠 Home sample collection available.</span></p>
+            <div class="offer-banner">
+                <div class="offer-badge">Limited Time Offer</div>
+                <div class="offer-main">Any Health Checkup</div>
+                <div class="offer-sub">33% OFF + Free <span class="home-sample-icon">🏠 Home Sample Collection</span></div>
+            </div>
+            <div class="packages-grid">
+                <!-- Executive Health Checkup -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Comprehensive</div>
+                    </div>
+                    <h3>Executive Health Checkup</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>CBP, ESR, FBS, HbA1c</li>
+                            <li>LFT, RFT, Electrolytes</li>
+                            <li>Lipid Profile, PLABS</li>
+                            <li>USG Abdomen & Pelvis</li>
+                            <li>ECG, Chest X-Ray</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹6500</div>
+                        <div class="price-offer">₹4300 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('Executive Health Checkup')">Book Now</button>
+                </div>
+                <!-- Complete Diabetic Checkup -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Diabetes</div>
+                    </div>
+                    <h3>Complete Diabetic Checkup</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>CBP, ESR, FBS, HbA1c</li>
+                            <li>Lipid Profile, PLABS</li>
+                            <li>Blood Urea, Creatinine</li>
+                            <li>ECG, Chest X-Ray</li>
+                            <li>USG Abdomen, CUE</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹3000</div>
+                        <div class="price-offer">₹2000 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('Complete Diabetic Checkup')">Book Now</button>
+                </div>
+                <!-- Cardiac Profile -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Heart</div>
+                    </div>
+                    <h3>Cardiac Profile</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>CBP, FBS, HbA1c</li>
+                            <li>Lipid Profile, Electrolytes</li>
+                            <li>Calcium, Urea/Creatinine</li>
+                            <li>ECG & Chest X-Ray</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹4500</div>
+                        <div class="price-offer">₹3000 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('Cardiac Profile')">Book Now</button>
+                </div>
+                <!-- Fever Profile -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Fever</div>
+                    </div>
+                    <h3>Fever Profile</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>CBP, ESR, CRP</li>
+                            <li>WIDAL, Dengue, Malaria</li>
+                            <li>Chest X-Ray</li>
+                            <li>CUE</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹3000</div>
+                        <div class="price-offer">₹2000 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('Fever Profile')">Book Now</button>
+                </div>
+                <!-- General Health Checkup -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Basic</div>
+                    </div>
+                    <h3>General Health Checkup</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>CBP, ESR, FBS, HbA1c</li>
+                            <li>LFT, Lipid Profile, PLABS</li>
+                            <li>Blood Grouping, Thyroid</li>
+                            <li>ECG, CUE</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹4500</div>
+                        <div class="price-offer">₹3000 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('General Health Checkup')">Book Now</button>
+                </div>
+                <!-- Basic Diabetic Profile -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Basic Diabetes</div>
+                    </div>
+                    <h3>Basic Diabetic Profile</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>FBS, PLABS, HbA1c</li>
+                            <li>Blood Urea, Creatinine</li>
+                            <li>Lipid Profile, CUE</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹3000</div>
+                        <div class="price-offer">₹2000 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('Basic Diabetic Profile')">Book Now</button>
+                </div>
+                <!-- Surgical Profile -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-badge">Pre-Op</div>
+                    </div>
+                    <h3>Surgical Profile</h3>
+                    <div class="package-tests">
+                        <ul>
+                            <li>CBP, RBS, Blood Grouping</li>
+                            <li>LFT, RFT, PT/APTT</li>
+                            <li>HIV, HBsAg, VDRL</li>
+                            <li>ECG, CUE</li>
+                        </ul>
+                    </div>
+                    <div class="package-pricing">
+                        <div class="price-original">₹4500</div>
+                        <div class="price-offer">₹3000 <span class="price-discount">33% OFF</span></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="selectPackage('Surgical Profile')">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Appointment -->
+        <section id="appointment">
+            <h2 class="section-heading">Book an Appointment</h2>
+            <p class="section-subtitle">Share your details and preferred time. Our team will confirm your appointment via email or WhatsApp. <strong>33% OFF on all packages!</strong></p>
+            <div class="appointment-layout">
+                <form id="appointmentForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" required placeholder="10-digit mobile number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" id="email" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service" required>
+                                <option value="">Select</option>
+                                <option>Radiology</option>
+                                <option>Pathology</option>
+                                <option>Both</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Health Package</label>
+                            <select id="package">
+                                <option value="">Select package (optional)</option>
+                                <option>Executive Health Checkup</option>
+                                <option>Complete Diabetic Checkup</option>
+                                <option>Cardiac Profile</option>
+                                <option>Fever Profile</option>
+                                <option>General Health Checkup</option>
+                                <option>Basic Diabetic Profile</option>
+                                <option>Surgical Profile</option>
+                                <option>Other Individual Tests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mode">Preferred Contact Mode</label>
+                            <select id="mode" required>
+                                <option value="">Select</option>
+                                <option>Email</option>
+                                <option>WhatsApp</option>
+                                <option>Either</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 0.7rem;">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" placeholder="Mention prescription, doctor name, fasting status, or home collection preference"></textarea>
+                    </div>
+                    <div class="appointment-actions">
+                        <button type="button" class="btn btn-primary" onclick="sendEmail()">Send via Email</button>
+                        <button type="button" class="btn btn-outline" onclick="sendWhatsApp()">Send via WhatsApp</button>
+                    </div>
+                    <p class="appointment-note"><strong>Note:</strong> 33% OFF applies automatically. Final confirmation and pricing from Nilai Diagnostics team.</p>
+                </form>
+                <div class="appointment-info">
+                    <p><strong>Book with 33% OFF offer!</strong> Appointments accepted via email or WhatsApp.</p>
+                    <div class="info-card">
+                        <h3>Before Your Visit</h3>
+                        <ul style="padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted);">
+                            <li>Bring doctor's prescription & previous reports</li>
+                            <li>Fasting tests: 8-12 hours (water allowed)</li>
+                            <li class="home-sample-icon">🏠 Home sample collection available</li>
+                            <li>Reports delivered within 24-48 hours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 class="section-heading">Contact Us</h2>
+            <p class="section-subtitle">Visit us or reach out for appointments, reports, or queries.</p>
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <p><strong>Nilai Diagnostics</strong></p>
+                    <p>Opp: SVR Hospital</p>
+                    <p>Gandhi Nagar, Ramareddy Road</p>
+                    <p><strong>Kamareddy</strong></p>
+                    <p>Phone / WhatsApp: <strong>9000324325</strong></p>
+                    <p>Email: <strong>nilaidiagnostics2024@gmail.com</strong></p>
+                    <p>Timings: <strong>Mon–Sat, 11:00 AM – 9:00 PM</strong></p>
+                </div>
+                <div>
+                    <div class="contact-actions">
+                        <a href="tel:+919000324325" class="btn btn-outline">Call</a>
+                        <a href="https://wa.me/919000324325?text=Hi%20Nilai%20Diagnostics,%20I%20have%20a%20query." target="_blank" class="btn btn-primary">WhatsApp</a>
+                        <a href="mailto:nilaidiagnostics2024@gmail.com" class="btn btn-outline">Email</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Nilai+Diagnostics,+Opp+SVR+Hospital,+Gandhi+Nagar,+Ramareddy+Road,+Kamareddy" target="_blank" class="btn btn-primary">Navigate</a>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.435580248405!2d78.3411259758642!3d18.327402275045056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc49000e9bedd3%3A0x973da3cd3c666116!2sNilai%20Diagnostics!5e0!3m2!1sen!2sin!4v1767094905676!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nilai Diagnostics Location"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <span>&copy; <span id="year"></span> Nilai Diagnostics, Kamareddy.</span>
+            <span>33% OFF Limited Time | <span class="home-sample-icon">🏠 Home Collection Available</span> | Precision & Trust</span>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Package selection with scroll
+        function selectPackage(name) {
+            document.getElementById('package').value = name;
+            document.getElementById('appointment').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Form message builder
+        function buildMessage() {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const service = document.getElementById('service').value;
+            const pkg = document.getElementById('package').value;
+            const mode = document.getElementById('mode').value;
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !phone || !date || !time || !service || !mode) {
+                alert('Please fill all required fields marked with *');
+                return null;
+            }
+
+            let text = `Nilai Diagnostics - Appointment Request (33% OFF Offer)\n\n`;
+            text += `Name: ${name}\n`;
+            text += `Mobile: ${phone}\n`;
+            if (email) text += `Email: ${email}\n`;
+            text += `Date: ${date}\n`;
+            text += `Time: ${time}\n`;
+            text += `Service: ${service}\n`;
+            if (pkg) text += `Package: ${pkg}\n`;
+            text += `Contact Mode: ${mode}\n`;
+            if (message) text += `Notes: ${message}\n\n`;
+            text += `Note: Requesting 33% OFF health checkup offer.`;
+
+            return text;
+        }
+
+        // WhatsApp sender
+        function sendWhatsApp() {
+            const text = buildMessage();
+            if (!text) return;
+            window.open(`https://wa.me/919000324325?text=${text}`, '_blank');
+        }
+
+        // Email sender
+        function sendEmail() {
+            const text = buildMessage();
+            if (!text) return;
+            const subject = encodeURIComponent('Appointment Request - 33% OFF Offer');
+            const body = encodeURIComponent(text.replace(/\\n/g, '%0A'));
+            window.location.href = `mailto:nilaidiagnostics2024@gmail.com?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
